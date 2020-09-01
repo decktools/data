@@ -1,0 +1,14 @@
+library(bonanza)
+
+TABLE <- "trait_election_voting_law"
+DATASET <- db.DATASET("confetti")
+
+dat <- 
+  db.table_read(TABLE, DATASET) %>% 
+  db.collect() %>% 
+  select(
+    -trait_election_voting_law_id,
+    -source_ids,
+    -source_table
+    -last_updated_at
+  )
