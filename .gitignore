@@ -1,2 +1,10 @@
 !*.csv
 !README.md
+*.Rproj*
+.Rproj.user
+.DS_Store
+.Rhistory
+.rstudio*
+.local/
+.vscode/
+.bash_history
